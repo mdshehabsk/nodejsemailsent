@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .img {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: 80vw;
+        height: 40vw;
+        object-fit: cover;
+      }
+      .text {
+        width: 60vw;
+        margin: 0 auto;
+      }
+      .text h2 {
+        text-transform: capitalize;
+        font-family: sans-serif;
+      }
+      .text h2 span {
+        color: #3c753c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="img">
+        <img src="image/email.jpg" alt="no image" />
+      </div>
+      <div class="text">
+        <h2>
+          Dear <span><%= user%></span>, Thanks you for your registration. Your
+          register email adress is <span><%=email%></span> and phone
+          number is <span><%=phone%></span>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
